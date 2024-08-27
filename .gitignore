@@ -1,0 +1,10 @@
+# Python-specific
+.venv/
+__pycache__/
+
+# Binaries
+dynamic_programming
+branch_and_bound
+greedy
+genetic
+backtracking
