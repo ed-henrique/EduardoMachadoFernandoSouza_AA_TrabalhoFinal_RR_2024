@@ -33,7 +33,6 @@ stdout_logger.addHandler(stdout_handler)
 BINARY_PROGRAMS = [
     "greedy",
     "dynamic_programming",
-    "branch_and_bound",
 ]
 
 INPUTS_DIR = "inputs"
@@ -92,8 +91,6 @@ def run_code():
                 time_average = sum(times) / len(times)
                 solution_average = sum(solutions) / len(solutions)
                 csv_logger.debug(f"{binary};{inputName};{solution_average};{time_average}")
-
-    csv_logger.debug("backtracking;1;3;0.000005")
 
 def main():
     list_files_input()

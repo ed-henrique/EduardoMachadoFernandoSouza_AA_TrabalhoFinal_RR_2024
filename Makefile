@@ -8,17 +8,11 @@ generate:
 compile/dyn:
 	gcc -O3 -Wall -Wextra -o dynamic_programming dynamic_programming.c
 
-compile/bb:
-	gcc -O3 -Wall -Wextra -o branch_and_bound branch_and_bound.c
-
 compile/greed:
 	gcc -O3 -Wall -Wextra -o greedy greedy.c
 
-compile/back:
-	gcc -O3 -Wall -Wextra -o backtracking backtracking.c
-
 compile:
-	make -j5 compile/dyn compile/bb compile/greed compile/back
+	make -j5 compile/dyn compile/greed
 
 bench:
 	python3 benchmark.py
@@ -29,6 +23,9 @@ plot:
 	pip install -r requirements.txt
 	python3 plot.py
 
+clean/bin:
+	rm -f dynamic_programming greedy
+
 clean:
-	rm -f dynamic_programming branch_and_bound greedy backtracking logs/* results.csv
+	rm -f dynamic_programming greedy logs/* assets/plot.svg results.csv
 

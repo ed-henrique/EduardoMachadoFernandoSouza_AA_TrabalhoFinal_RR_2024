@@ -14,11 +14,7 @@ Este trabalho faz a análise de um algoritmo que utiliza de Programação Dinâm
 - *Benchmark* do algoritmo com diferentes entradas;
 - Gráfico mostrando a relação entrada-tempo e sua tendência de comportamento assintótico;
 
-Ela pode ainda mostrar a comparação entre os resultados do algoritmo proposto e de outras soluções, por exemplo:
-
-- Resolução por algoritmo guloso (*greedy*);
-- Resolução por força bruta (*backtracking*);
-- Resolução por ramificação e poda (*branch and bound*).
+Ainda mostramos a comparação entre os resultados do algoritmo proposto e de outra solução, utilizando um algoritmo guloso (*greedy*).
 
 ## Cálculos de Custo e Complexidade
 
@@ -27,19 +23,7 @@ Ela pode ainda mostrar a comparação entre os resultados do algoritmo proposto 
 
 <!-- TODO -->
 
-### Algoritmo Genético
-
-<!-- TODO -->
-
 ### Algoritmo Guloso
-
-<!-- TODO -->
-
-### Força Bruta
-
-<!-- TODO -->
-
-### Ramificação e Poda
 
 <!-- TODO -->
 
@@ -76,7 +60,6 @@ Ela pode ainda mostrar a comparação entre os resultados do algoritmo proposto 
 
 ## Considerações
 
-- Binários em C foram compilados usando o `gcc`, com as flags `Wall`, `Wextra` e `-O3`;
-- O algoritmo `backtracking` não pôde ser analisado pois ele não suportou as entradas, que iniciavam em 1000 itens.
+- Binários em C foram compilados usando o `gcc`, com as flags `Wall`, `Wextra` e `-O3`.
 
 ## Referências
