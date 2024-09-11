@@ -1,5 +1,7 @@
 # Trabalho Final de Análise de Algoritmos (DCC606 - 2024)
 
+[Roadmap](https://github.com/users/ed-henrique/projects/2)
+
 ## Integrantes
 
 - Eduardo Henrique Freire Machado (2020001617);
