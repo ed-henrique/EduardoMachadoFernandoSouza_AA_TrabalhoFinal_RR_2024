@@ -14,10 +14,18 @@ Este trabalho faz a análise de um algoritmo que utiliza de Programação Dinâm
 - *Benchmark* do algoritmo com diferentes entradas;
 - Gráfico mostrando a relação entrada-tempo e sua tendência de comportamento assintótico;
 
-Ainda mostramos a comparação entre os resultados do algoritmo proposto e de outra solução, utilizando um algoritmo guloso (*greedy*).
+Ainda mostramos a comparação entre os resultados do algoritmo proposto e de outras duas soluções, utilizando *backtracking* e algoritmo guloso (*greedy*).
+
+## Aplicações Reais do Problema da Mochila
+
+- **Logística e transporte**: Em operações de transporte, como na escolha de quais itens carregar em um caminhão ou aeronave com espaço limitado, é preciso maximizar o valor ou a importância dos itens, respeitando as restrições de peso ou volume;
+- **Gestão de portfólio financeiro**: Investidores podem usar o problema da mochila para decidir como alocar recursos em diferentes ativos financeiros, maximizando o retorno esperado enquanto respeitam limites de investimento, como um orçamento fixo;
+- **Planejamento de atividades**: Na gestão de tempo, por exemplo, um profissional pode ter várias tarefas a realizar e um tempo limitado. O problema da mochila ajuda a priorizar quais tarefas realizar para maximizar a produtividade;
+- **Seleção de projetos**: Empresas com um orçamento limitado podem usar essa abordagem para selecionar um conjunto de projetos que maximizem o retorno ou o impacto, respeitando a restrição financeira;
+- **Planejamento de expedições**: Em atividades ao ar livre, como caminhadas ou viagens, deve-se escolher o que levar em uma mochila limitada em termos de peso ou espaço, maximizando o conforto ou utilidade dos itens selecionados;
+- **Planejamento de campanhas publicitárias**: Em marketing, uma empresa pode ter um orçamento de publicidade e diferentes canais de marketing com custos e retornos variados. O problema da mochila pode ajudar a escolher a combinação ideal de investimentos em publicidade.
 
 ## Cálculos de Custo e Complexidade
-
 
 ### Programação Dinâmica
 
@@ -40,7 +48,6 @@ Ainda mostramos a comparação entre os resultados do algoritmo proposto e de ou
 ![Resultados da Equipe](./assets/plot.svg)
 
 </div>
-
 
 ## Demonstração Visual
 
