@@ -49,6 +49,8 @@ Ainda mostramos a comparação entre os resultados do algoritmo proposto e de ou
 
 <div align="center">
 
+![Resultado do Benchmark](./assets/plot.svg)
+
 </div>
 
 ## Demonstração Visual
