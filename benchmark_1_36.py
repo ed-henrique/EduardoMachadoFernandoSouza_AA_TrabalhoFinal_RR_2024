@@ -14,7 +14,7 @@ csvFormatter = logging.Formatter("%(message)s")
 csv_logger = logging.getLogger("csv_logger")
 csv_logger.setLevel(logging.DEBUG)
 
-csv_handler = logging.FileHandler("results.csv")
+csv_handler = logging.FileHandler("results_1_36.csv")
 csv_handler.setLevel(logging.DEBUG)
 csv_handler.setFormatter(csvFormatter)
 
@@ -31,6 +31,7 @@ stdout_handler.setFormatter(formatter)
 stdout_logger.addHandler(stdout_handler)
 
 BINARY_PROGRAMS = [
+    "backtracking",
     "dynamic_programming",
 ]
 
@@ -45,8 +46,9 @@ def log(message):
 def list_files_input():    
     for (dirpath, _, filenames) in walk(INPUTS_DIR):
         for file in filenames:
-            full_path = os.path.abspath(dirpath) + "/" + file
-            PATH_FILES_INPUT_LIST.append(full_path)   
+            if int(file.split(".")[0]) == 36:
+                full_path = os.path.abspath(dirpath) + "/" + file
+                PATH_FILES_INPUT_LIST.append(full_path)   
 
 
 def run_code():

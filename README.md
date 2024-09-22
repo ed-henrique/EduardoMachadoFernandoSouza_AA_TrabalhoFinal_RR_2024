@@ -1,6 +1,8 @@
 # Trabalho Final de Análise de Algoritmos (DCC606 - 2024)
 
-[Roadmap](https://github.com/users/ed-henrique/projects/2)
+- [Artigo](./paper.pdf)
+- [Apresentação](./presentation.pdf)
+- [Roadmap](https://github.com/users/ed-henrique/projects/2)
 
 ## Integrantes
 
@@ -9,14 +11,14 @@
 
 ## Introdução
 
-Este trabalho faz a análise de um algoritmo que utiliza de Programação Dinâmica para resolver o Problema da Mochila (*Knapsack Problem*). A análise engloba:
+Este trabalho faz a análise de um algoritmo que utiliza de Programação Dinâmica para resolver o Problema da Mochila 0/1 (*Knapsack Problem 0/1*). A análise engloba:
 
 - Função de custo e complexidade do algoritmo;
 - Código em C do algoritmo proposto;
 - *Benchmark* do algoritmo com diferentes entradas;
 - Gráfico mostrando a relação entrada-tempo e sua tendência de comportamento assintótico;
 
-Ainda mostramos a comparação entre os resultados do algoritmo proposto e de outras duas soluções, utilizando *backtracking* e algoritmo guloso (*greedy*).
+Ainda mostramos a comparação entre os resultados do algoritmo proposto e de outra solução, utilizando *Backtracking*.
 
 ## Aplicações Reais do Problema da Mochila
 
@@ -37,7 +39,7 @@ Ainda mostramos a comparação entre os resultados do algoritmo proposto e de ou
 
 <!-- TODO -->
 
-## Resultados
+## Resultados de Benchmark
 
 ### Literatura
 
@@ -46,8 +48,6 @@ Ainda mostramos a comparação entre os resultados do algoritmo proposto e de ou
 ### Equipe
 
 <div align="center">
-
-![Resultados da Equipe](./assets/plot.svg)
 
 </div>
 
@@ -60,15 +60,9 @@ Ainda mostramos a comparação entre os resultados do algoritmo proposto e de ou
 - [ ] Função de custo e complexidade;
 - [x] Código em C do algoritmo proposto;
 - [x] Experimentação com a execução do algoritmo com diferentes entradas e coleta de tempo de execução;
-- [ ] Gráfico de linha com o tempo de execução em relação a cada entrada e análise da tendência de comportamento assintótico.
-
-### Extras
-
-- [x] Comparação com outras soluções;
-- [ ] Funções de custo e complexidade das outras soluções.
+- [x] Gráfico de linha com o tempo de execução em relação a cada entrada e análise da tendência de comportamento assintótico.
 
 ## Considerações
 
 - Binários em C foram compilados usando o `gcc`, com as flags `Wall`, `Wextra` e `-O3`.
 
-## Referências
