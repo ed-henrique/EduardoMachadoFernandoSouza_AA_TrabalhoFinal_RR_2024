@@ -47,10 +47,6 @@ def plot_data_1_36(ax, data):
     # Generate a color map based on the number of unique algorithms
     colors = plt.colormaps["Dark2"]
 
-    # Create the second y-axis and remove its tick labels
-    ax2 = ax.twinx()
-    ax2.set_ylabel('Solution')
-
     algo_handles = []
 
     for idx, algo in enumerate(data['Algorithm'].unique()):
@@ -58,7 +54,6 @@ def plot_data_1_36(ax, data):
 
         ax.plot(algo_data['Input'], algo_data['Time'], color=colors(idx))
         ax.plot(algo_data['Input'], algo_data['Expected Asymptotic Behavior'], color=colors(idx+2))
-        ax2.plot(algo_data['Input'], algo_data['Solution'], linestyle='-.', color=colors(idx))
         algo_handles.append(Line2D([0], [0], color=colors(idx), label=f'{algo}'))
 
         if idx == 0:
@@ -69,14 +64,7 @@ def plot_data_1_36(ax, data):
     ax.set_ylabel('Time')
     ax.set_title(f'Benchmark')
 
-    handles_style = [
-        Line2D([0], [0], color='black', linestyle='-', linewidth=2, label='Time'),
-        Line2D([0], [0], color='black', linestyle='-.', linewidth=2, label='Solution')
-    ]
-
-    combined_handles = handles_style + algo_handles
-
-    ax.legend(handles=combined_handles, loc='upper left')
+    ax.legend(handles=algo_handles, loc='upper left')
     ax.grid(True)
 
 def plot_data(ax, data):
@@ -86,10 +74,6 @@ def plot_data(ax, data):
     # Generate a color map based on the number of unique algorithms
     colors = plt.colormaps["Dark2"]
 
-    # Create the second y-axis and remove its tick labels
-    ax2 = ax.twinx()
-    ax2.set_ylabel('Solution')
-
     algo_handles = []
 
     for idx, algo in enumerate(data['Algorithm'].unique()):
@@ -97,21 +81,13 @@ def plot_data(ax, data):
 
         ax.plot(algo_data['Input'], algo_data['Time'], color=colors(idx))
         ax.plot(algo_data['Input'], algo_data['Expected Asymptotic Behavior'], color=colors(idx+1))
-        ax2.plot(algo_data['Input'], algo_data['Solution'], linestyle='-.', color=colors(idx))
         algo_handles.append(Line2D([0], [0], color=colors(idx), label=f'{algo}'))
         algo_handles.append(Line2D([0], [0], color=colors(idx+1), label='O(N*W)'))
 
     ax.set_ylabel('Time')
     ax.set_title(f'Benchmark')
 
-    handles_style = [
-        Line2D([0], [0], color='black', linestyle='-', linewidth=2, label='Time'),
-        Line2D([0], [0], color='black', linestyle='-.', linewidth=2, label='Solution')
-    ]
-
-    combined_handles = handles_style + algo_handles
-
-    ax.legend(handles=combined_handles, loc='upper left')
+    ax.legend(handles=algo_handles, loc='upper left')
     ax.grid(True)
 
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 12))
